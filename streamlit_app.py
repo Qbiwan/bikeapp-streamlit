@@ -42,11 +42,8 @@ st.write("\n")
 st.write("You have selected the following inputs:")
 st.write(df)
 
-# with open("./model/xgbmodel.pkl", "rb") as f:
-#     load_clf = pickle.load(f)
-
-
-load_clf = pickle.load(open("./model/xgbmodel.pkl", 'rb'))    
+with open("./model/xgbmodel.pkl", "rb") as f:
+    load_clf = pickle.load(f)   
 preds = load_clf.predict(df)[0]
 
 st.write("\n")

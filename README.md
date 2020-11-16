@@ -5,14 +5,15 @@
 ```
 bikeapp-streamlit
 ├── model                                         
-│     └── xgbmodel.h5                            <- trained xgboost model  
+│     └── xgbmodel.h5                         <- trained xgboost model  
 ├── Demo                                         
 │     └── Demo.gif 
-├── streamlit_app.py                             <- streamlit                                   
-├── Procfile                                     <- commands to be executed by heroku on app startup 
-├── requirements.txt                             <- heroku app dependencies  
-├── setup.sh                                     <- setup for heroku  
-├── runtime.txt                                  <- specify python version for heroku  
+├── streamlit_app.py                          <- streamlit                                
+├── Procfile                                  <- commands to be executed by heroku on app startup 
+├── requirements.txt                          <- heroku app dependencies  
+├── setup.sh                                  <- setup for heroku  
+├── runtime.txt                               <- specify python version for heroku
+├── train.py                                  <- train model
 └── README.md
 ```
 

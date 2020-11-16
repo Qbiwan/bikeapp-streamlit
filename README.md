@@ -8,8 +8,7 @@ bikeapp-streamlit
 │     └── xgbmodel.h5                            <- trained xgboost model  
 ├── Demo                                         
 │     └── Demo.gif 
-├── streamlit_app.py                             <- streamlit                                    
-├── train.py                                     <- train keras model
+├── streamlit_app.py                             <- streamlit                                   
 ├── Procfile                                     <- commands to be executed by heroku on app startup 
 ├── requirements.txt                             <- heroku app dependencies  
 ├── setup.sh                                     <- setup for heroku  
@@ -35,3 +34,17 @@ Bike App is deployed on Heroku live at [HERE](https://bikeapp-streamlit.herokuap
 - xgboost
 - pickle
 - sklearn
+
+
+## Installation
+
+
+
+```bash
+# Create the virtual environent using conda
+$ conda env create -f environment.yml
+$ conda activate bikeapp-streamlit
+
+# Run the python scripts
+$ python train.py  # train xgboost model
+$ streamlit run streamlit_app.py  # serve streamlit app
